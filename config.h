@@ -63,7 +63,6 @@ static const char unknown_str[] = "-";
  */
 static const struct arg args[] = {
 	/* function  format                    argument */
-  { keymap,    "\x02 %s ",     NULL      },
   { cpu_perc,  "\x03\x04  %2s%% ",     NULL      },
   { ram_perc,  "\x05\x06  %2s%% ",     NULL      },
   { disk_perc, "\x07\x08 /home %2s%% ", "/home"   },
