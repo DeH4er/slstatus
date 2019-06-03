@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 1000;
+const unsigned int interval = 2000;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "-";
@@ -63,10 +63,10 @@ static const char unknown_str[] = "-";
  */
 static const struct arg args[] = {
 	/* function  format                    argument */
-  { cpu_perc,  "\x03\x04  %2s%% ",     NULL      },
-  { ram_perc,  "\x05\x06  %2s%% ",     NULL      },
-  { disk_perc, "\x07\x08 /home %2s%% ", "/home"   },
-  { disk_perc, "\x09\x0a / %2s%% ",     "/"       },
-  { datetime,  "\x0b\x0c  %s ",        "%d/%m/%Y %H:%M"}
+  { cpu_perc,  " [cpu %2s%% ] | ",     NULL      },
+  { ram_perc,  "[ram %2s%% ] | ",     NULL      },
+  { disk_perc, "[/home %2s%% ] | ", "/home"   },
+  { disk_perc, "[/ %2s%% ] | ",     "/"       },
+  { datetime,  "[time %s ] ",        "%d/%m/%Y %H:%M"}
 };
 
